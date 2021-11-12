@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Cyclocross Disc Bike",
+        "description": "Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Quisque id odio.",
+        "img": "https://templates.envytheme.com/herobike/default/assets/img/new-product3.jpg",
+        "price": 900
+    },
+    {
+        "id": 2,
+        "name": "DiamondBack Bicycles Trace Dual",
+        "description": "Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Quisque id odio.",
+        "img": "https://templates.envytheme.com/herobike/default/assets/img/new-product5.jpg",
+        "price": 900
+    },
+    {
+        "id": 3,
+        "name": "Cyclocross Disc Bike",
+        "description": "Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Quisque id odio.",
+        "img": "https://templates.envytheme.com/herobike/default/assets/img/new-product1.jpg",
+        "price": 900
+    },
+    {
+        "id": 4,
+        "name": "Cyclocross Disc Bike",
+        "description": "Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Quisque id odio.",
+        "img": "https://templates.envytheme.com/herobike/default/assets/img/new-product4.jpg",
+        "price": 900
+    },
+    {
+        "id": 5,
+        "name": "Cyclocross Disc Bike",
+        "description": "Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Quisque id odio.",
+        "img": "https://templates.envytheme.com/herobike/default/assets/img/new-product6.jpg",
+        "price": 900
+    },
+    {
+        "id": 6,
+        "name": "Cyclocross Disc Bike",
+        "description": "Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Quisque id odio.",
+        "img": "https://templates.envytheme.com/herobike/default/assets/img/new-product2.jpg",
+        "price": 900
+    },
+    {
+        "id": 7,
+        "name": "Cyclocross Disc Bike",
+        "description": "Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Quisque id odio.",
+        "img": "https://templates.envytheme.com/herobike/default/assets/img/new-product4.jpg",
+        "price": 900
+    },
+    {
+        "id": 8,
+        "name": "Cyclocross Disc Bike",
+        "description": "Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Quisque id odio.",
+        "img": "https://templates.envytheme.com/herobike/default/assets/img/new-product2.jpg",
+        "price": 900
+    },
+    {
+        "id": 9,
+        "name": "Cyclocross Disc Bike",
+        "description": "Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Quisque id odio.",
+        "img": "https://templates.envytheme.com/herobike/default/assets/img/new-product6.jpg",
+        "price": 900
+    },
+    {
+        "id": 10,
+        "name": "Cyclocross Disc Bike",
+        "description": "Morbi mattis ullamcorper velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Quisque id odio.",
+        "img": "https://templates.envytheme.com/herobike/default/assets/img/bike7.jpg",
+        "price": 900
+    }
+]
