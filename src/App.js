@@ -29,9 +29,7 @@ function App() {
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
             </PrivateRoute>
-            <Route path="/addnewbooking">
 
-            </Route>
             <Route exact path="/">
               <Home></Home>
             </Route>

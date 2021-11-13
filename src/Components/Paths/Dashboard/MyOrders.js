@@ -13,7 +13,7 @@ const MyOrders = () => {
     return (
         <div>
             <div>
-                <h1 className='w-full italic underline  mt-5 mx-auto pb-5 sm:text-xl lg:text-4xl text-center text-indigo-600'>List of your cycle Bookings</h1>
+                <h1 className='w-full italic underline  mt-5 mx-auto pb-5 sm:text-xl lg:text-4xl text-center text-gray-600'>List of your cycle Bookings</h1>
             </div>
             {/* my orders : {orders?.length} */}
             <div className="gap-8 grid lg:grid-cols-3 lg:p-10  sm:p-2" >

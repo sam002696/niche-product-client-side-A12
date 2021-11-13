@@ -97,7 +97,7 @@ const ManageProducts = () => {
                                                     Available
                                                 </span>
                                             </td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-white">{product?.price}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-black">{product?.price}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                                 <button onClick={() => handleDeleteProduct(product?._id)} type="button" className="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Delete</button>
                                             </td>

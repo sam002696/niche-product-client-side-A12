@@ -4,6 +4,9 @@ import HomeBooking from './HomeBooking';
 import HomeReviews from './HomeReviews';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBicycle, faLifeRing, faUser, faBullseye } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
+import LightSpeed from 'react-reveal/LightSpeed';
+import Roll from 'react-reveal/Roll';
 
 
 const Home = () => {
@@ -39,8 +42,10 @@ const Home = () => {
                 <div className='lg:flex lg:flex-row lg:pt-64 text-white p-10 rounded-3xl sm:flex-col-reverse sm:flex '>
 
                     <div className='flex-col self-center sm:pt-1.5 sm:w-11/12 lg:w-7/12'>
+                        <LightSpeed left>
+                            <h1 className='font-bold text-5xl'>Best <span className=' text-black'>Cycling</span>, <span className='text-red-600'>Experience</span></h1>
+                        </LightSpeed>
 
-                        <h1 className='font-bold text-5xl'>Best <span className=' text-black'>Cycling</span>, <span className='text-red-600'>Experience</span></h1>
 
 
 
@@ -62,9 +67,12 @@ const Home = () => {
             {/* extra section */}
 
             <div>
-                <div className='lg:grid lg:grid-cols-3 sm:grid sm:grid-cols-1 mx-10 mt-20 mb-10 '>
+                <div className='lg:grid lg:grid-cols-3 sm:grid sm:grid-cols-1 mx-10 mt-20 mb-10 lg:space-x-8 '>
                     <div className='col-span-1'>
-                        <h1 className='sm:font-black sm:mb-5 text-4xl text-center text-black'>Welcome To Our <span className='text-red-600'>HeroBike</span></h1>
+                        <Fade left>
+                            <h1 className='sm:font-black sm:mb-5 text-4xl text-center text-black'>Welcome To Our <span className='text-red-600'>BICYCLE HUB</span></h1>
+                        </Fade>
+
                     </div>
                     <div className='col-span-2'>
                         <p className=' lg:text-left lg:w-11/12 sm:text-2xl sm:text-center text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -132,8 +140,10 @@ const Home = () => {
             {/* Cycles */}
 
             <div>
+                <Roll left>
+                    <h1 className='font-bold p-10 text-5xl text-center lg:mt-5'>FEATURED  <span className='text-red-500'>PRODUCTS</span> </h1>
+                </Roll>
 
-                <h1 className='font-bold p-10 text-5xl text-center lg:mt-5'>FEATURED  <span className='text-red-500'>PRODUCTS</span> </h1>
 
 
             </div>
@@ -158,8 +168,10 @@ const Home = () => {
 
             {/* Reviews */}
             <div>
+                <Roll right>
+                    <h1 className='font-bold p-10 text-5xl text-center'>BEST <span className='text-red-500'>REVIEWS</span> </h1>
 
-                <h1 className='font-bold p-10 text-5xl text-center'>BEST <span className='text-red-500'>REVIEWS</span> </h1>
+                </Roll>
 
 
             </div>

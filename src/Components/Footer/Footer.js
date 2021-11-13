@@ -22,7 +22,7 @@ const Footer = () => {
                         <span className="self-center text-2xl font-semibold">BICYCLE HUB</span>
                     </a>
                 </div>
-                <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
+                <div className="gap-x-3 gap-y-8 grid grid-cols-2 lg:font-light lg:text-2xl lg:w-2/3 sm:grid-cols-4 text-sm">
                     <div className="space-y-3">
                         <h3 className="tracking-wide uppercase dark:text-coolGray-50">Learn More</h3>
                         <ul className="space-y-1">

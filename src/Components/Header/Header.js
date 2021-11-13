@@ -31,10 +31,10 @@ const Header = () => {
                         <Link to='/dashboard' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 hover:animate-bounce-slow">
                             Dashboard
                         </Link>
-                        {user?.email && user?.displayName && <p className='block text-yellow-400  hover:text-white lg:inline-block lg:mt-0 mr-2 mt-4 text-xl font-bold text-teal-200'>{user?.displayName}</p>}
+                        {user?.email && user?.displayName && <p className='block text-gray-400  hover:text-white lg:inline-block lg:mt-0 mr-2 mt-4 text-teal-200 font-bold text-teal-200'>{user?.displayName}</p>}
 
                         {user?.email ? <Link to='/login' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-2">
-                            <button onClick={logOut} className='border-2 focus:ring-2 focus:ring-gray-400 hover:bg-black hover:text-white  p-1 rounded'> Log Out</button> </Link> :
+                            <button onClick={logOut} className='border-2 focus:ring-2 focus:ring-red-800 bg-yellow-600 hover:bg-red-600  p-1 rounded'> Log Out</button> </Link> :
 
 
 
