@@ -26,30 +26,34 @@ const Home = () => {
     return (
         <div>
             {/* Banner */}
-            <div className="w-full h-full bg-cover bg-no-repeat bg-left" style={{
-                backgroundImage: `url("https://cdn.shopify.com/s/files/1/0366/2325/3549/files/bg-slideshow-v4.jpg?v=1584608048 ")`,
+            <div className="" style={{
+                backgroundImage: `url("https://www.bmc-switzerland.com/media/wysiwyg/BMC_Showroom_2021__DSC4714_1.jpg")`,
+                backgroundPosition: 'center center',
+                backgroundRepeat: 'no-repeat',
+                backgroundAttachment: 'fixed',
+                backgroundSize: 'cover',
+                width: 'full',
+                height: '1000px'
 
             }}>
-                <div className='lg:flex lg:flex-row justify-evenly m-12 p-10 rounded-3xl sm:flex-col-reverse sm:flex sm:m-5'>
+                <div className='lg:flex lg:flex-row lg:pt-64 text-white p-10 rounded-3xl sm:flex-col-reverse sm:flex '>
 
-                    <div className='flex-col self-center sm:pt-1.5 sm:w-11/12 w-1/3'>
+                    <div className='flex-col self-center sm:pt-1.5 sm:w-11/12 lg:w-7/12'>
 
-                        <h1 className='font-bold text-5xl'>Best <span className=' text-blue-600'>Cycling</span>, <span className='text-green-600'>Experience</span></h1>
+                        <h1 className='font-bold text-5xl'>Best <span className=' text-black'>Cycling</span>, <span className='text-red-600'>Experience</span></h1>
 
 
 
-                        <p className='font-serif lg:w-2/3 mt-10 text-2xl'>Phasellus eget condimentum nibh. Nunc id enim id velit commodo efficitur. Duis auctor, mauris in maximus cursus, purus neque ultricies velitVivamus a turpis nisi. Fusce feugiat feugiat congue in mauris id sollicitudin.</p>
+                        <p className='mt-10 text-2xl font-serif'>Phasellus eget condimentum nibh. Nunc id enim id velit commodo efficitur. Duis auctor, mauris in maximus cursus, purus neque ultricies velitVivamus a turpis nisi. Fusce feugiat feugiat congue in mauris id sollicitudin.</p>
 
-                        <Link to='/products'> <button className=" bg-gradient-to-r from-green-400 to-blue-500 transition delay-150 duration-300 ease-in-out bg-white  border border-gray-400 font-semibold hover:bg-green-500 hover:text-white mt-16  px-4 py-2 rounded shadow text-gray-800 w-2/3 text-2xl ">
+                        <Link to='/products'> <button className=" bg-gradient-to-r from-red-400 to-black transition delay-150 duration-300 ease-in-out bg-white  border border-gray-400 font-semibold hover:bg-green-500 hover:text-white mt-16  px-4 py-2 rounded shadow text-gray-800 w-2/3 text-2xl ">
                             Explore
                         </button>
                         </Link>
                     </div>
 
 
-                    <div>
-                        <img src='https://cdn.shopify.com/s/files/1/0366/2325/3549/files/slideshow-v4-img1.png?v=1584607086' alt="bike" />
-                    </div>
+
 
                 </div>
             </div>
@@ -60,7 +64,7 @@ const Home = () => {
             <div>
                 <div className='lg:grid lg:grid-cols-3 sm:grid sm:grid-cols-1 mx-10 mt-20 mb-10 '>
                     <div className='col-span-1'>
-                        <h1 className='sm:font-black sm:mb-5 text-4xl text-center text-red-600'>Welcome To Our HeroBike</h1>
+                        <h1 className='sm:font-black sm:mb-5 text-4xl text-center text-black'>Welcome To Our <span className='text-red-600'>HeroBike</span></h1>
                     </div>
                     <div className='col-span-2'>
                         <p className=' lg:text-left lg:w-11/12 sm:text-2xl sm:text-center text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -79,7 +83,7 @@ const Home = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                             </p>
                         </div>
-                        <button className='p-4 w-full bg-red-600 text-2xl text-white font-semibold'>Read More</button>
+                        <button className='p-4 w-full bg-red-600 text-2xl text-white font-semibold hover:bg-black'>Read More</button>
                     </div>
                     <div class="col-span-1 max-w-sm rounded overflow-hidden shadow-lg">
                         <div className='text-6xl text-center p-2 text-red-600 pt-5 animate-spin-slow'>
@@ -92,7 +96,7 @@ const Home = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                             </p>
                         </div>
-                        <button className='p-4 w-full bg-red-600 text-2xl text-white font-semibold'>Read More</button>
+                        <button className='p-4 w-full bg-red-600 text-2xl text-white font-semibold hover:bg-black'>Read More</button>
                     </div>
                     <div class="col-span-1 max-w-sm rounded overflow-hidden shadow-lg">
                         <div className='text-6xl text-center p-2 text-red-600 pt-5 animate-bounce-slow'>
@@ -105,7 +109,7 @@ const Home = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                             </p>
                         </div>
-                        <button className='p-4 w-full bg-red-600 text-2xl text-white font-semibold'>Read More</button>
+                        <button className='p-4 w-full bg-red-600 text-2xl text-white font-semibold hover:bg-black'>Read More</button>
                     </div>
                     <div class="col-span-1 max-w-sm rounded overflow-hidden shadow-lg">
                         <div className='text-6xl text-center p-2 text-red-600 pt-5 animate-ping-slow'>
@@ -118,7 +122,7 @@ const Home = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                             </p>
                         </div>
-                        <button className='p-4 w-full bg-red-600 text-2xl text-white font-semibold'>Read More</button>
+                        <button className='p-4 w-full bg-red-600 text-2xl text-white font-semibold hover:bg-black'>Read More</button>
                     </div>
 
 
@@ -129,7 +133,7 @@ const Home = () => {
 
             <div>
 
-                <h1 className='font-bold p-10 text-5xl text-center'>FEATURED  <span className='text-indigo-500'>PRODUCTS</span> </h1>
+                <h1 className='font-bold p-10 text-5xl text-center lg:mt-5'>FEATURED  <span className='text-red-500'>PRODUCTS</span> </h1>
 
 
             </div>
@@ -155,7 +159,7 @@ const Home = () => {
             {/* Reviews */}
             <div>
 
-                <h1 className='font-bold p-10 text-5xl text-center'>BEST <span className='text-indigo-500'>REVIEWS</span> </h1>
+                <h1 className='font-bold p-10 text-5xl text-center'>BEST <span className='text-red-500'>REVIEWS</span> </h1>
 
 
             </div>

@@ -10,6 +10,7 @@ import BookingDetails from './Components/Paths/BookingDetails/BookingDetails';
 import AuthProvider from './ContextApi/AuthProvider';
 import AboutUs from './Components/Paths/AboutUs/AboutUs';
 import PrivateRoute from './Components/Paths/PrivateRoute/PrivateRoute';
+import NotFound from './Components/Paths/NotFound/NotFound';
 function App() {
   return (
     <AuthProvider>
@@ -44,7 +45,7 @@ function App() {
               <AboutUs></AboutUs>
             </Route>
             <Route path="*">
-
+              <NotFound></NotFound>
             </Route>
 
           </Switch>

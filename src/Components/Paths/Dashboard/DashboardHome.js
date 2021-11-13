@@ -8,7 +8,7 @@ const DashboardHome = () => {
             {
                 user?.email &&
                 <div>
-                    <h1 className='border-b-4 font-bold mt-20 mx-auto pb-5 text-5xl text-center text-gray-600 w-2/4'>Welcome , {user.displayName}</h1>
+                    <h1 className='w-full border-b-4 font-bold  mt-20 mx-auto pb-5 sm:text-3xl lg:text-5xl text-center text-indigo-600'>Welcome To DashBoard, {user.displayName}</h1>
                 </div>
             }
         </div>

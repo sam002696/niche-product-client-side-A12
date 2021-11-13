@@ -12,11 +12,8 @@ const MakeAdmin = () => {
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
-                if (data.modifiedCount) {
+                if (!data.modifiedCount) {
                     alert("Successfully Made the User Admin!")
-                }
-                else {
-                    alert("admin already exists");
                 }
             });
         console.log(data);
@@ -24,14 +21,14 @@ const MakeAdmin = () => {
 
     return (
         <div>
-            <h1 className='font-black m-11 text-5xl text-center text-gray-600'>Make Admin</h1>
-            <form className="booking-form flex flex-col  py-10 space-y-5" onSubmit={handleSubmit(onSubmit)}>
+            <h1 className='font-mono sm:m-5 lg:m-11 sm:text-3xl lg:text-5xl text-center text-gray-700'>Make An Admin</h1>
+            <form className="booking-form flex flex-col sm:py-2 lg:py-5 space-y-5 sm:w-full lg:w-2/5 mx-auto" onSubmit={handleSubmit(onSubmit)}>
 
-                <input className='outline-none border-2 rounded p-3 font-black text-2xl' placeholder="Email"
+                <input className='outline-none border-2 rounded p-2 text-blue-gray border-gray-700 text-2xl' placeholder="Email"
                     type="email" {...register("email", { required: true })} />
 
 
-                <input className='border-2 hover:bg-green-400 hover:text-white p-3 ring-2 ring-gray-300 rounded text-gray-500 text-2xl font-black' type="submit" />
+                <input className='border-2 bg-gray-600 hover:bg-green-600 hover:text-white p-2 ring-1 ring-gray-700 rounded text-white text-2xl font-mono' type="submit" />
             </form>
 
         </div>

@@ -50,7 +50,7 @@ const ManageAllOrders = () => {
 
     return (
         <div className="">
-            <h1 className='font-black m-5 text-5xl text-center text-gray-600'>Manage All Orders</h1>
+            <h1 className='font-mono m-5 italic underline sm:text-3xl lg:text-5xl text-center text-gray-600'>Manage All Orders</h1>
 
             {/* <!-- component --> */}
             <div className=" m-12 mx-auto rounded-3xl text-gray-900">
@@ -59,24 +59,24 @@ const ManageAllOrders = () => {
                     <table className=" text-md bg-white shadow-md rounded mb-4">
                         <tbody>
                             <tr className="border-b">
-                                <th className="p-5 text-left px-5 text-xl">Name</th>
-                                <th className="p-5 text-left px-5 text-xl">Email</th>
-                                <th className="p-5 text-left px-5 text-xl">Booking Place</th>
-                                <th className="p-5 text-left px-5 text-xl">Phone No</th>
-                                <th className="p-5 text-left px-5 text-xl">Status</th>
-                                <th className="p-5 text-left px-5 text-xl">Delete</th>
+                                <th className="p-5 text-left px-5 text-lg">Name</th>
+                                <th className="p-5 text-left px-5 text-lg">Email</th>
+                                <th className="p-5 text-left px-5 text-lg">Booking Place</th>
+                                <th className="p-5 text-left px-5 text-lg">Phone No</th>
+                                <th className="p-5 text-left px-5 text-lg">Status</th>
+                                <th className="p-5 text-left px-5 text-lg">Delete</th>
 
                             </tr>
                             {allOrders.map(order =>
-                            (<tr className="border-b hover:bg-orange-100 bg-gray-100">
-                                <td className="p-5 text-xl px-5"><input type="text" value={order?.name} className="bg-transparent" /></td>
-                                <td className="p-5 text-xl px-5"><input type="text" value={order?.email} className="bg-transparent" /></td>
-                                <td className="p-5 text-xl px-5"><input type="text" value={order?.bookingDetails} className="bg-transparent" /></td>
-                                <td className="p-5 text-xl px-5"><input type="text" value={order?.phone} className="bg-transparent" /></td>
+                            (<tr className="border-b hover:bg-orange-100 bg-gray-200">
+                                <td className="p-5 text-lg px-5"><input type="text" value={order?.name} className="bg-transparent" /></td>
+                                <td className="p-5 text-lg px-5"><input type="text" value={order?.email} className="bg-transparent" /></td>
+                                <td className="p-5 text-lg px-5"><input type="text" value={order?.bookingDetails} className="bg-transparent" /></td>
+                                <td className="p-5 text-lg px-5"><input type="text" value={order?.phone} className="bg-transparent" /></td>
 
-                                <td className="p-5  px-5 flex justify-end"><button onClick={() => handleBookingUpdate(order?._id)} type="button" className="mr-3 text-xl bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline ">{order?.status}</button></td>
+                                <td className="p-5  px-5 flex justify-end"><button onClick={() => handleBookingUpdate(order?._id)} type="button" className="mr-3 text-lg bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline ">{order?.status}</button></td>
                                 <td className='p-5'>
-                                    <button onClick={() => handleCancelBooking(order?._id)} type="button" className="text-xl bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Delete</button></td>
+                                    <button onClick={() => handleCancelBooking(order?._id)} type="button" className="text-lg bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Delete</button></td>
                             </tr>
                             ))}
 

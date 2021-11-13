@@ -23,18 +23,19 @@ const Reviews = () => {
         console.log(data);
     }
     return (
-        <div>
-            <h1 className='border-b-4 font-black mt-10 mx-auto pb-5 text-5xl text-center text-gray-600 w-2/5'>Please Review</h1>
+        <div className="">
+            <h1 className='font-mono mt-10 mx-auto pb-5 sm:text-2xl lg:text-4xl text-center text-gray-600 w-full'>Please Review</h1>
             <div>
-                <form className="booking-form flex flex-col  py-10 space-y-5" onSubmit={handleSubmit(onSubmit)}>
+                <form className="booking-form flex flex-col  py-5 space-y-5 sm:w-full lg:w-3/5 mx-auto" onSubmit={handleSubmit(onSubmit)}>
 
-                    <input className='outline-none border-2 rounded p-3 font-black text-2xl' defaultValue={user.displayName} {...register("name")} />
+                    <input className='outline-none border-2 rounded sm:p-2 lg:px-3 lg:py-5 font-mono text-xl' defaultValue={user.displayName} {...register("name")} />
 
-                    <input className='outline-none border-2 rounded p-3 font-black text-2xl' defaultValue={user.email} {...register("email", { required: true })} />
+                    <input className='outline-none border-2 rounded sm:p-2 lg:px-3 lg:py-5 font-mono text-xl' defaultValue={user.email} {...register("email", { required: true })} />
                     {/* {errors.email && <span className="error">This field is required</span>} */}
-                    <textarea className='outline-none border-2 rounded p-3 font-black text-2xl' placeholder="Your Reviews" defaultValue="" {...register("review")} />
 
-                    <input type='date' className='outline-none border-2 rounded p-3 font-black text-2xl' {...register("date", { required: true })} />
+                    <textarea className='outline-none border-2 rounded sm:p-2 lg:px-3 lg:py-5 font-mono text-xl' placeholder="Your Reviews" defaultValue="" {...register("review")} />
+
+                    <input type='date' className='outline-none border-2 rounded sm:p-2 lg:px-3 lg:py-5 font-mono text-xl' {...register("date", { required: true })} />
 
                     {/* <Controller
                         control={control}
@@ -48,7 +49,7 @@ const Reviews = () => {
                         )}
                     /> */}
 
-                    <select className='outline-none border-2 rounded p-3 font-black text-2xl' placeholder="Review" defaultValue="" {...register("rating")}>
+                    <select className='outline-none border-2 rounded sm:p-2 lg:px-3 lg:py-5 font-mono text-xl' placeholder="Review" defaultValue="" {...register("rating")}>
                         <option value="">Rating</option>
                         <option value="0">0</option>
                         <option value="1">1</option>
@@ -63,7 +64,7 @@ const Reviews = () => {
 
                     </select>
 
-                    <select className='outline-none border-2 rounded p-3 font-black text-2xl' placeholder="Review" defaultValue="" {...register("designation")}>
+                    <select className='outline-none border-2 rounded sm:p-2 lg:px-3 lg:py-5 font-mono text-xl' placeholder="Review" defaultValue="" {...register("designation")}>
                         <option value="">Designation</option>
                         <option value="Certified Buyer">Certified Buyer</option>
                         <option value="Product Manager">Product Manager</option>
@@ -76,7 +77,7 @@ const Reviews = () => {
                     </select>
 
 
-                    <input className='border-2 hover:bg-green-400 hover:text-white p-3 ring-2 ring-gray-300 rounded text-gray-500 text-2xl font-black' type="submit" />
+                    <input className='border-1 bg-indigo-600 hover:bg-green-500 hover:text-white sm:p-2 lg:px-3 lg:py-5 font-mono ring-2 ring-indigo-400 rounded text-white text-xl' type="submit" />
                 </form>
             </div>
         </div>

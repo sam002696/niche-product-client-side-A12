@@ -27,8 +27,12 @@ const Login = () => {
         userWithEmailandPassword()
             .then(result => {
                 history.push(redirect);
-                window.location.reload(false);
+
             });
+        // .then(data => {
+        //     window.location.reload(true);
+        // });
+        // window.location.reload();
         e.preventDefault();
     }
     const handleGoogleSignIn = () => {

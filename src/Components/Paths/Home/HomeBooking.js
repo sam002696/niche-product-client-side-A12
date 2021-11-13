@@ -22,7 +22,7 @@ const HomeBooking = (props) => {
                 </div>
                 <div>
                     <Link to={`/bookingDetail/${_id}`}>
-                        <button className="bg-white border border-gray-400 duration-500 ease-in-out font-sans font-semibold hover:-translate-y-1 hover:bg-green-500 hover:scale-110 hover:text-white mt-4 px-4 py-2 rounded shadow text-2xl text-gray-800 transform transition w-2/3 ">
+                        <button className="bg-white border border-gray-400 duration-500 ease-in-out font-sans font-semibold hover:-translate-y-1 hover:bg-red-500 hover:scale-110 hover:text-white mt-4 px-4 py-2 rounded shadow text-2xl text-gray-800 transform transition w-2/3 ">
                             Book Now
                         </button>
                     </Link>

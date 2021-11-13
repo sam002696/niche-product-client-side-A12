@@ -5,4 +5,5 @@ table {
     margin: 0 auto;
     overflow-x: scroll;
     white-space: nowrap;
+    height: 600px;
   }

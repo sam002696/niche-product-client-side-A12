@@ -7,7 +7,7 @@ const HomeReviews = (props) => {
         <div>
             <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
 
-                <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+                <div className="pt-6 md:p-8 text-center space-y-4">
                     <blockquote>
                         <p className="text-lg font-semibold">
                             “{review}”
@@ -23,7 +23,7 @@ const HomeReviews = (props) => {
                         <div className="text-gray-500">
                             {date}
                         </div>
-                        <div className="text-yellow-500">
+                        <div className="mt-4 text-yellow-500">
                             <Rating initialRating={rating}
                                 emptySymbol="fa fa-star-o fa-2x"
                                 fullSymbol="fa fa-star fa-2x"

@@ -7,9 +7,9 @@ const Header = () => {
     const { user, logOut } = useAuth();
     return (
         <div>
-            <nav className=" bg-gradient-to-r bg-teal-500 flex flex-wrap from-black items-center justify-between p-6 to-green-800">
+            <nav className=" bg-gradient-to-r bg-teal-500 flex flex-wrap from-black items-center justify-between p-6 to-red-800">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
-                    <span className="font-serif lg:flex-grow text-2xl">TOUR HUB</span>
+                    <span className="font-serif lg:flex-grow text-2xl">BICYCLE HUB</span>
                 </div>
                 <div className="block lg:hidden">
                     <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -31,7 +31,7 @@ const Header = () => {
                         <Link to='/dashboard' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 hover:animate-bounce-slow">
                             Dashboard
                         </Link>
-                        {user?.email && <p className='block border-2 hover:animate-bounce-slow hover:bg-black hover:text-white lg:inline-block lg:mt-0 mr-2 mt-4 p-1 rounded text-teal-200 text-yellow-500 sm:w-52 lg:text-center sm:text-center'>{user.displayName}</p>}
+                        {user?.email && user?.displayName && <p className='block text-yellow-400  hover:text-white lg:inline-block lg:mt-0 mr-2 mt-4 text-xl font-bold text-teal-200'>{user?.displayName}</p>}
 
                         {user?.email ? <Link to='/login' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-2">
                             <button onClick={logOut} className='border-2 focus:ring-2 focus:ring-gray-400 hover:bg-black hover:text-white  p-1 rounded'> Log Out</button> </Link> :
